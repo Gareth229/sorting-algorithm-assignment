@@ -14,10 +14,10 @@ int main() {
         cin >> arr[i];
     }
 
-    // Cube Sort (Descending)
-    for(int i = 0; i < n-1; i++){
-        for(int j = i+1; j < n; j++){
-            if(arr[i]*arr[i]*arr[i] < arr[j]*arr[j]*arr[j]){
+    // Cube Sort Descending
+    for(int i = 0; i < n - 1; i++){
+        for(int j = i + 1; j < n; j++){
+            if((arr[i]*arr[i]*arr[i]) < (arr[j]*arr[j]*arr[j])){
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -25,7 +25,7 @@ int main() {
         }
     }
 
-    cout << "Sorted list in descending order:\n";
+    cout << "Sorted list (Cube Descending): ";
     for(int i = 0; i < n; i++){
         cout << arr[i] << " ";
     }
